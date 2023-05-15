@@ -1,0 +1,296 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubham Kushwaha
+% Based off of: https://github.com/EricLiclair/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./images/} }
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+% \begin{left}
+    % \begin{wrapfigure}{r}{0.2\textwidth}
+    %     {\vspace*{-0.07\textwidth}\includegraphics[width=0.2\textwidth]{images/logo.png}}
+    % \end{wrapfigure}
+    {\Huge \scshape Priyanshu Shekhar} \\ \vspace{1pt}
+    Patna, Bihar, 800006 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8235251118 ~ \href{mailto:priyanshu.21ug2008@iiitranchi.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{priyanshu.21ug2008@iiitranchi.ac.in}} ~
+    \href{https://www.linkedin.com/in/priyanshu-shekhar-97a686239}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/priyanshu-shekhar}}  ~
+    \href{https://github.com/Priyanshushekhar77}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Priyanshushekhar77}}\
+    \href{https://leetcode.com/way6shekhar/}{\underline{leetcode.com/way6shekhar/}}\
+    \href{https://auth.geeksforgeeks.org/user/way6she3fp/practice}{\underline{geeksforgeeks.org/user/way6shekhar/practice}}
+    \href{https://www.codechef.com/users/priyanshu_3708}
+    {\underline{codechef.com/users/priyanshu_}}
+   
+    \vspace{}
+% \end{left}
+
+% \begin{wrapfigure}{r}{0.4\linewidth}
+%     \includegraphics[width=\linewidth]{images/profile.png}
+% \end{wrapfigure}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Ranchi}{Dec. 2021 -- Present}
+      {B. Tech. in \textbf{Electronics and Communication Engineering} (CGPA 9.15)}{Ranchi, Jharkhand}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms Analysis
+%                 \item Advanced Algorithms
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Frontend Developer Intern}{April 2023 -- May 2023}
+      {\href{https://oasisinfobyte.com/}{Oasis Infobyte}}{Delhi, Remote}
+      \resumeItemListStart
+        \resumeItem{Developed a travel website as a front-end developer using \textbf{Tailwind and React-js} .}
+        \resumeItem{Developed a Fitness Sports Website using \textbf{Html,CSS}, \textbf{Bootstrap}.}
+      \resumeItemListEnd
+      
+    
+    \resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\href{https://github.com/Priyanshushekhar77/Study-Mania}{\raisebox{0.0\height}\faLink\ {\textbf{Study-Mania}}} $|$ \emph{NodeJS,Express,MongoDB,HTML,CSS,JavaScript, React}}{july 2023}
+      \resumeItemListStart
+        \resumeItem{An Educational-Tech Complete Website for the \textbf{4-18 years} of age \textbf{Students}.}
+        \resumeItem{Consists features of a \textbf{seamless and interactive learning} experience for students, making education more  \textbf{accessible} and \textbf{engaging}.}
+        \resumeItem{A platform for instructor to \textbf{showcase their expertise and connect with learners across the globe}.}
+      \resumeItemListEnd
+      
+      \vspace{-13pt}
+        \resumeProjectHeading
+          {\href{https://github.com/Priyanshushekhar77/DevDetective---GitHub}{\raisebox{0.0\height}\faLink\ {\textbf{DevDetective--GitHub}}} $|$ \emph{HTML,CSS,JavaScript,API fetch}}{June 2023}
+          \resumeItemListStart
+            \resumeItem{A website 
+            which provide you Information about GitHub account of user and their \textbf{Repos,Followers,Following} and the \textbf{links of social media accounts}.}
+       
+          \resumeItemListEnd
+          \vspace{-13pt}
+      
+      \resumeProjectHeading
+          {\href{https://github.com/EricLiclair/CPCLI}{\raisebox{0.0\height}\faLink\ {\textbf{Password--Generator}}} $|$ \emph{HTML,CSS,JavaScript}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{It's a project Which Helps users to Create all Types of Strong Password whics includes Numbers \textbf{0-9} ,Letters \textbf{A,a-Z,z}, and all the Special \textbf{Characters}.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\href{https://}{\raisebox{0.0\height}\faLink\ {\textbf{Personal-Portfolio}}} $|$ \emph{HTML,CSS,JavaScript}}{March 2023}
+          \resumeItemListStart
+            \resumeItem{My fully Responsive and Interactive Portfolio website with  \textbf{Dark theme support} and liked by \textbf{1000+} people.}
+            % \resumeItem{Contains a feature which shows flash cards from the list of solved questions to help remember the important concepts.}
+            % \resumeItem{Built a very \textbf{responsive design} using \textbf{Material UI styled components}, and \textbf{framer motion}.}
+            % \resumeItem{\textbf{Reduced} read \textbf{api calls} cutting down on cost over firebase resources using \textbf{react context} to \textbf{store data locally}.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/firebaseChatapp}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Firebase( Auth, Realtime Database, Hosting), React, AntDesign}}{Aug 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{A Web application developed using \textbf{React}, \textbf{AntdDesign} and \textbf{Firebase} with Authentication.}
+        %     \resumeItem{The application provides an interface for users to chat one-to-one, and also provides a list of all users (online and offline) to select from.}
+        %   \resumeItemListEnd
+          \vspace{13pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/testapi}{\raisebox{0.0\height}\faLink\ {\textbf{Test API}}} $|$ \emph{Django, Django Rest Framework, drf-yasg, Token Auth, Redoc}}{Jun 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a concept of API containing the details of the students of institute to be used by the students.}
+        %     \resumeItem{Exposes an \textbf{endpoint to generate token} which can be exchanged over other endpoints of the API to access the students database.}
+        %     \resumeItem{Implemented \textbf{role based authorization} using \textbf{generic and hybrid API Views}.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------RESEARCH-----------
+\section{Research/Achievements}
+
+    \resumeSubHeadingListStart
+
+        \resumeSubheading{Hacktoberfest 2022}{8 PR merged}{Contributed and Completed 8 PR request in open source society.}
+        {hacktoberfest.com/}{\href{https://hacktoberfest.com/}}
+
+        \resumeSubheading{Solved 700+ Problems}{}{ On Geeksforgeeks,Leetcode,Codestudio and \textbf{5*} at  \href{https://www.hackerrank.com/priyanshu_21ug21}
+    {\underline{HackerRank}} \textbf{1600+}Rating on  \href{https://www.codechef.com/users/priyanshu_3708}
+    {\underline{Codechef}}}{\href{}{}}
+
+        % \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+        %     \resumeItemListStart
+        %         \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{:C, C++, Python, JavaScript} \\
+     \textbf{Developer Tools}{: VS Code, Chrome DevTools} \\
+     \textbf{Technologies/Frameworks}{:Git, GitHub,HTML,CSS,Bootstrap,Tailwind React,NodeJS,Express,MogoDB,Matlab} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Class Representative}{Sept 2022 -- Present}{Electronics and Communication Branch}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{Keep in touch with all the department head regarding \textbf{activities} and act as an interface between the \textbf{Students} and the \textbf{administration}.}
+            \resumeItemListEnd
+            
+        \resumeSubheading{Lead:Event Management}{April 2023}{House of Hackers}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{ \textbf{lead} and \textbf{managed} a national level hackathon in the college \textbf{}.}
+                \resumeItem{\textbf{250+} Students Participated from all parts of India.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Campus-Ambessdor}{Dec 2022 -- May 2023}{Prepbyte}{Ranchi}
+            \resumeItemListStart
+                \resumeItem{Managed a Coding Environment and conducted several coding contest organised by a prepbyte. }
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\end{document}
